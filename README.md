@@ -70,6 +70,8 @@ ADMIN_PASSWORD=
    - `SUPABASE_SERVICE_ROLE_KEY`
    - `WEBHOOK_SECRET_TOKEN`
    - `ADMIN_PASSWORD`
+   - Framework Preset: `Other`
+   - Output Directory: leave empty
 7. Deploy once so you get the production URL.
 8. Set `TELEGRAM_WEBHOOK_URL` to `https://YOUR-PROJECT.vercel.app/api/telegram-webhook`.
 9. Redeploy, or add that variable and trigger a new deployment.
