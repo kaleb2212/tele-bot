@@ -1,0 +1,19 @@
+{
+  "name": "beast-service-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram bot and REST API for a local services marketplace MVP.",
+  "main": "api/telegram-webhook.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo \"nothing to build\"",
+    "start": "vercel dev",
+    "check": "node --check api/telegram-webhook.js && node --check api/set-webhook.js && node --check api/health.js && node --check api/providers.js && node --check api/clients.js && node --check api/requests.js && node --check api/supabaseClient.js && node --check utils/sendMessage.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8"
+  }
+}
